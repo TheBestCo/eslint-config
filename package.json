@@ -2,7 +2,7 @@
 {
   "name": "eslint-config-phaistos-networks",
   "version": "1.0.2",
-  "description": "Shared .eslinrc",
+  "description": "Phastos Networks' shared eslint config",
   "main": "index.js",
   "scripts": {
   },
