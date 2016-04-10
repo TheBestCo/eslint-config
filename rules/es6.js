@@ -1,19 +1,20 @@
 module.exports = {
+  "parser": "babel-eslint",
   'env': {
     'es6': true
   },
-
   'plugins': [
     'import',
   ],
-
   'parserOptions': {
     'ecmaVersion': 6,
     'sourceType': 'module',
     'ecmaFeatures': {
       'jsx': true,
-      'generators': false,
-      'objectLiteralDuplicateProperties': false
+      "modules": true,
+      "classes": true,
+      "generators": true,
+      "experimentalObjectRestSpread": true
     }
   },
   'rules': {
@@ -30,14 +31,14 @@ module.exports = {
 
     // enforces no braces where they can be omitted
     // http://eslint.org/docs/rules/arrow-body-style
-    'arrow-body-style': [2, 'as-needed'],
+    'arrow-body-style': [1, 'as-needed'],
     // require parens in arrow function arguments
     'arrow-parens': [1, 'as-needed'],
     // require space before/after arrow function's arrow
     // https://github.com/eslint/eslint/blob/master/docs/rules/arrow-spacing.md
     'arrow-spacing': [1, { 'before': true, 'after': true }],
     // require trailing commas in multiline object literals
-    'comma-dangle': [2, 'always-multiline'],
+    'comma-dangle': 2,
     // verify super() callings in constructors
     'constructor-super': 1,
     // enforce the spacing around the * in generator functions

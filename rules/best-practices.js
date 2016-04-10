@@ -36,7 +36,7 @@ module.exports = {
     // disallow division operators explicitly at beginning of regular expression
     'no-div-regex': 1,
     // disallow else after a return in an if
-    'no-else-return': 1,
+    'no-else-return': 0,
     // disallow Unnecessary Labels
     // http://eslint.org/docs/rules/no-extra-label
     'no-extra-label': 1,
@@ -86,7 +86,7 @@ module.exports = {
     // disallow reassignment of function parameters
     // disallow parameter object manipulation
     // rule: http://eslint.org/docs/rules/no-param-reassign.html
-    'no-param-reassign': [1, { 'props': true }],
+    'no-param-reassign': [0, { 'props': true }],
     // disallow use of process.env
     'no-process-env': 0,
     // disallow usage of __proto__ property
@@ -94,7 +94,8 @@ module.exports = {
     // disallow declaring the same variable more then once
     'no-redeclare': 1,
     // disallow use of assignment in return statement
-    'no-return-assign': 1,
+    // NOTE: let's leave this to IGNORE for now so we can do ref => this.node = ref. Pehaps later
+    'no-return-assign': 0,
     // disallow use of `javascript:` urls.
     'no-script-url': 1,
     // disallow comparisons where both sides are exactly the same
@@ -123,7 +124,7 @@ module.exports = {
     // disallow use of the with statement
     'no-with': 1,
     // require use of the second argument for parseInt()
-    'radix': 1,
+    'radix': 0,
     // requires to declare all vars on top of their containing scope
     'vars-on-top': 1,
     // require immediate function invocation to be wrapped in parentheses

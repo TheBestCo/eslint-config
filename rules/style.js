@@ -7,7 +7,7 @@ module.exports = {
     // require camel case names
     'camelcase': [2, { 'properties': 'always' }],
     // enforce spacing before and after comma
-    'comma-spacing': [2, { 'before': false, 'after': true }],
+    'comma-spacing': [1, { 'before': false, 'after': true }],
     // enforce one true comma style
     'comma-style': [2, 'last'],
     // disallow padding inside computed properties
@@ -128,7 +128,7 @@ module.exports = {
     'space-before-blocks': 1,
     // require or disallow space before function opening parenthesis
     // https://github.com/eslint/eslint/blob/master/docs/rules/space-before-function-paren.md
-    'space-before-function-paren': [1, { 'anonymous': 'always', 'named': 'never' }],
+    'space-before-function-paren': 1,
     // require or disallow spaces inside parentheses
     'space-in-parens': [1, 'never'],
     // require spaces around operators

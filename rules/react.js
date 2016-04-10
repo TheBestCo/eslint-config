@@ -3,9 +3,7 @@ module.exports = {
     'jsx-a11y',
     'react'
   ],
-  'ecmaFeatures': {
-    'jsx': true
-  },
+
   // View link below for react rules documentation
   // https://github.com/yannickcr/eslint-plugin-react#list-of-supported-rules
   'rules': {
@@ -30,13 +28,13 @@ module.exports = {
     'react/display-name': [0, { 'ignoreTranspilerName': false }],
     // Forbid certain propTypes (any, array, object)
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-prop-types.md
-    'react/forbid-prop-types': [1, { 'forbid': ['any', 'array', 'object'] }],
+    'react/forbid-prop-types': [1, { 'forbid': ['any'] }],
     // Enforce boolean attributes notation in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md
     'react/jsx-boolean-value': [1, 'never'],
     // Validate closing bracket location in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md
-    'react/jsx-closing-bracket-location': [1, 'line-aligned'],
+    'react/jsx-closing-bracket-location': [1, { nonEmpty: 'after-props', selfClosing: 'after-props'} ],
     // Enforce or disallow spaces inside of curly braces in JSX attributes
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md
     'react/jsx-curly-spacing': [1, 'never', { 'allowMultiline': true }],
@@ -139,7 +137,8 @@ module.exports = {
     'react/require-extension': [1, { 'extensions': ['.jsx'] }],
     // Require render() methods to return something
     // https://github.com/yannickcr/eslint-plugin-react/pull/502
-    'react/require-render-return': 1,
+    // NOTE: Does not work properly at all times
+    'react/require-render-return': 0,
     // Prevent extra closing tags for components without children
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md
     'react/self-closing-comp': 1,
