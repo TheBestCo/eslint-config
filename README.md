@@ -1,54 +1,38 @@
 # TODO
 
 1. ERROR, WARNING, IGNORE instead of 1, 0, 2
-2. Make sure all rules are respected
-4. Make sure the newest rules are there
 5. Change this file
 3. Replace on all cases, e.g extension, ccc, adman
 
 
 # eslint-config-airbnb
 
-[![npm version](https://badge.fury.io/js/eslint-config-airbnb.svg)](http://badge.fury.io/js/eslint-config-airbnb)
+This package provides Phaistos Networks's .eslintrc as an extensible shared config.
 
-This package provides Airbnb's .eslintrc as an extensible shared config.
+*It's basically a clone of [Airbnb's](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) same project with different and more rules and some other minor changes*
 
 ## Usage
 
 We export three ESLint configurations for your usage.
 
-### eslint-config-airbnb
+### eslint-config-phaistos-networks
 
 Our default export contains all of our ESLint rules, including EcmaScript 6+
 and React. It requires `eslint` and `eslint-plugin-react`.
 
-1. `npm install --save-dev eslint-config-airbnb eslint-plugin-react eslint`
-2. add `"extends": "airbnb"` to your .eslintrc
+1. `npm install --save-dev eslint-config-phaistos-networks eslint-plugin-import eslint-plugin-react eslint`
+2. add `"extends": "phaistos-networks"` to your .eslintrc
 
-### eslint-config-airbnb/base
+### eslint-config-phaistos-networks/base
 
 Lints ES6+ but does not lint React. Requires `eslint`.
 
-1. `npm install --save-dev eslint-config-airbnb eslint`
-2. add `"extends": "airbnb/base"` to your .eslintrc
+1. `npm install --save-dev eslint-config-phaistos-networks eslint-plugin-import eslint`
+2. add `"extends": "phaistos-networks/base"` to your .eslintrc
 
-### eslint-config-airbnb/legacy
+### eslint-config-phaistos-networks/legacy
 
 Lints ES5 and below. Only requires `eslint`.
 
-1. `npm install --save-dev eslint-config-airbnb eslint`
-2. add `"extends": "airbnb/legacy"` to your .eslintrc
-
-See [Airbnb's Javascript styleguide](https://github.com/airbnb/javascript) and
-the [ESlint config docs](http://eslint.org/docs/user-guide/configuring#extending-configuration-files)
-for more information.
-
-## Improving this config
-
-Consider adding test cases if you're making complicated rules changes, like
-anything involving regexes. Perhaps in a distant future, we could use literate
-programming to structure our README as test cases for our .eslintrc?
-
-You can run tests with `npm test`.
-
-You can make sure this module lints with itself using `npm run lint`.
+1. `npm install --save-dev eslint-config-phaistos-networks eslint`
+2. add `"extends": "phaistos-networks/legacy"` to your .eslintrc

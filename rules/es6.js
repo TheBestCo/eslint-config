@@ -17,6 +17,17 @@ module.exports = {
     }
   },
   'rules': {
+    // Ensure imports point to a file/module that can be resolved
+    'import/no-unresolved': 0,
+    // Ensure named imports correspond to a named export in the remote file
+    'import/named': 1,
+    // Ensure imported namespaces contain dereferenced properties as they are dereferenced
+    'import/namespace': 0, // not working okay yet
+    // Ensure a default export is present, given a default import
+    'import/default': 1,
+    // Report any invalid exports, i.e. re-export of the same name
+    'import/export': 1,
+
     // enforces no braces where they can be omitted
     // http://eslint.org/docs/rules/arrow-body-style
     'arrow-body-style': [2, 'as-needed'],
