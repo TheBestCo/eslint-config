@@ -3,15 +3,15 @@ module.exports = {
     // disallow assignment in conditional expressions
     'no-cond-assign': [2, 'always'],
     // disallow use of console
-    'no-console': 1,
+    'no-console': 0,
     // disallow use of constant expressions in conditions
     'no-constant-condition': 1,
     // disallow control characters in regular expressions
-    'no-control-regex': 2,
+    'no-control-regex': 1,
     // disallow use of debugger
-    'no-debugger': 2,
+    'no-debugger': 1,
     // disallow duplicate arguments in functions
-    'no-dupe-args': 2,
+    'no-dupe-args': 1,
     // disallow duplicate keys when creating object literals
     'no-dupe-keys': 2,
     // disallow a duplicate case label.
@@ -23,17 +23,17 @@ module.exports = {
     // disallow assigning to the exception in a catch block
     'no-ex-assign': 2,
     // disallow double-negation boolean casts in a boolean context
-    'no-extra-boolean-cast': 0,
+    'no-extra-boolean-cast': 1,
     // disallow unnecessary parentheses
-    'no-extra-parens': [2, 'functions'],
+    'no-extra-parens': [1, 'functions'],
     // disallow unnecessary semicolons
     'no-extra-semi': 2,
     // disallow overwriting functions written as function declarations
-    'no-func-assign': 2,
+    'no-func-assign': 1,
     // disallow function or variable declarations in nested blocks
-    'no-inner-declarations': 2,
+    'no-inner-declarations': 1,
     // disallow invalid regular expression strings in the RegExp constructor
-    'no-invalid-regexp': 2,
+    'no-invalid-regexp': 1,
     // disallow irregular whitespace outside of strings and comments
     'no-irregular-whitespace': 2,
     // disallow negation of the left operand of an in expression
@@ -47,12 +47,12 @@ module.exports = {
     // disallow unreachable statements after a return, throw, continue, or break statement
     'no-unreachable': 2,
     // disallow comparisons with the value NaN
-    'use-isnan': 2,
+    'use-isnan': 1,
     // ensure JSDoc comments are valid
-    'valid-jsdoc': 0,
+    'valid-jsdoc': 1,
     // ensure that the results of typeof are compared against a valid string
     'valid-typeof': 2,
     // Avoid code that looks like two expressions but is actually one
-    'no-unexpected-multiline': 0
+    'no-unexpected-multiline': 1
   }
 };

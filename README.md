@@ -1,3 +1,12 @@
+# TODO
+
+1. ERROR, WARNING, IGNORE instead of 1, 0, 2
+2. Make sure all rules are respected
+4. Make sure the newest rules are there
+5. Change this file
+3. Replace on all cases, e.g extension, ccc, adman
+
+
 # eslint-config-airbnb
 
 [![npm version](https://badge.fury.io/js/eslint-config-airbnb.svg)](http://badge.fury.io/js/eslint-config-airbnb)

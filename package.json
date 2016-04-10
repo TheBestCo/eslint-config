@@ -1,11 +1,10 @@
 
 {
   "name": "eslint-config-phaistos-networks",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Shared .eslinrc",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -16,13 +15,5 @@
   "bugs": {
     "url": "https://github.com/phaistos-networks/eslint-config-phaistos-networks/issues"
   },
-  "homepage": "https://github.com/phaistos-networks/eslint-config-phaistos-networks#readme",
-  "devDependencies": {
-    "eslint": "*",
-    "eslint-plugin-jsx-a11y": "*",
-    "eslint-plugin-react": "*",
-    "react": ">=15",
-  }
+  "homepage": "https://github.com/phaistos-networks/eslint-config-phaistos-networks#readme"
 }
-
-
