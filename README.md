@@ -31,7 +31,7 @@ Lints ES5 and below. Only requires `eslint`.
 1. `npm install --save-dev eslint-config-phaistos-networks eslint`
 2. add `"extends": "phaistos-networks/legacy"` to your .eslintrc
 
-### If you want to have eslint installed globally, i.e running eslint in termila
+### If you want to have eslint installed globally, i.e running eslint in terminal (CLI)
 
 
 ```bash
