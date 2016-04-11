@@ -1,11 +1,5 @@
-# TODO
 
-1. ERROR, WARNING, IGNORE instead of 1, 0, 2
-5. Change this file
-3. Replace on all cases, e.g extension, ccc, adman
-
-
-# eslint-config-airbnb
+# eslint-config-phaistos-networks
 
 This package provides Phaistos Networks's .eslintrc as an extensible shared config.
 
