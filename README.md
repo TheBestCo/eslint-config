@@ -14,7 +14,7 @@ We export three ESLint configurations for your usage.
 Our default export contains all of our ESLint rules, including EcmaScript 6+
 and React. It requires `eslint` and `eslint-plugin-react`.
 
-1. `npm install --save-dev eslint-config-phaistos-networks eslint-plugin-import eslint-plugin-react babel-eslint eslint`
+1. `npm install --save-dev eslint-config-phaistos-networks eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y babel-eslint eslint`
 2. add `"extends": "phaistos-networks"` to your .eslintrc
 
 ### eslint-config-phaistos-networks/base
@@ -39,6 +39,7 @@ npm install -g eslint
 npm install -g babel-eslint
 npm install -g eslint-plugin-react
 npm install -g eslint-plugin-import
+npm install -g eslint-plugin-jsx-a11y
 npm install -g eslint-config-phaistos-networks
 ```
 
