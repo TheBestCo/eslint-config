@@ -36,3 +36,10 @@ Lints ES5 and below. Only requires `eslint`.
 
 1. `npm install --save-dev eslint-config-phaistos-networks eslint`
 2. add `"extends": "phaistos-networks/legacy"` to your .eslintrc
+
+### --fix
+
+Notes:
+
+1. run `eslint . --fix`
+2. make sure an `.eslintignore ` is in place
