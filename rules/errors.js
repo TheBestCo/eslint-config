@@ -53,6 +53,9 @@ module.exports = {
     // ensure that the results of typeof are compared against a valid string
     'valid-typeof': 2,
     // Avoid code that looks like two expressions but is actually one
-    'no-unexpected-multiline': 1
+    'no-unexpected-multiline': 1,
+    // disallow control flow statements in finally blocks (no-unsafe-finally)
+    // This rule disallows return, throw, break and continue statements inside finally blocks. It allows indirect usages such as in function or class declarations / expressions etc.
+    'no-unsafe-finally': 1
   }
 };

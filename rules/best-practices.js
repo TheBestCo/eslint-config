@@ -131,6 +131,8 @@ module.exports = {
     // http://eslint.org/docs/rules/wrap-iife.html
     'wrap-iife': [1, 'outside'],
     // require or disallow Yoda conditions
-    'yoda': 1
+    'yoda': 1,
+    // Disallow unnecessary computed property keys on objects (no-useless-computed-key)
+    'no-useless-computed-key': 1
   }
 };
