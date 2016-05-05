@@ -13,15 +13,15 @@ module.exports = {
 
     // Require <img> to have a non-empty `alt` prop, or role="presentation"
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/img-uses-alt.md
-    'jsx-a11y/img-uses-alt': 2,
+    'jsx-a11y/img-has-alt': 2,
 
     // Prevent img alt text from containing redundant words like "image", "picture", or "photo"
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/redundant-alt.md
-    'jsx-a11y/redundant-alt': 2,
+    'jsx-a11y/img-redundant-alt': 2,
 
     // Require ARIA roles to be valid and non-abstract
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/valid-aria-role.md
-    'jsx-a11y/valid-aria-role': 1,
+    'jsx-a11y/aria-props': 1,
 
     // Prevent missing displayName in a React component definition
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/display-name.md
