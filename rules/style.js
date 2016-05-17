@@ -101,7 +101,9 @@ module.exports = {
     // require padding inside curly braces
     'object-curly-spacing': [1, 'always'],
     // enforce placing object properties on separate lines
-    'object-property-newline': 1,
+    // TODO: this causes issues
+    // TODO: UPDATE IT LATER
+    'object-property-newline': 0,
     // allow just one var statement per function
     'one-var': [1, 'never'],
     // require a newline around variable declaration
