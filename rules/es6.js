@@ -75,7 +75,7 @@ module.exports = {
     'no-useless-constructor': 1,
     // require method and property shorthand syntax for object literals
     // https://github.com/eslint/eslint/blob/master/docs/rules/object-shorthand.md
-    'object-shorthand': [1, 'always'],
+    'object-shorthand': [1, 'always', { 'ignoreConstructors': true }],
     // suggest using arrow functions as callbacks
     'prefer-arrow-callback': 1,
     // suggest using of const declaration for variables that are never modified after declared
