@@ -133,6 +133,13 @@ module.exports = {
     // require or disallow Yoda conditions
     'yoda': 1,
     // Disallow unnecessary computed property keys on objects (no-useless-computed-key)
-    'no-useless-computed-key': 1
+    'no-useless-computed-key': 1,
+    // Disallow renaming import, export, and destructured assignments to the same name
+    'no-useless-rename': 1,
+    // Require or disallow the Unicode Byte Order Mark (BOM) (unicode-bom)
+    // NOT needed for UTF so off for now
+    'unicode-bom': 0,
+    // Disallow use of Object.prototypes builtins directly
+    'no-prototype-builtins': 0
   }
 };
