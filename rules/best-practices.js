@@ -135,7 +135,11 @@ module.exports = {
     // Disallow unnecessary computed property keys on objects (no-useless-computed-key)
     'no-useless-computed-key': 1,
     // Disallow renaming import, export, and destructured assignments to the same name
-    'no-useless-rename': 1,
+    'no-useless-rename': [1, {
+      "ignoreDestructuring": true,
+      "ignoreImport": true,
+      "ignoreExport": true
+    }],
     // Require or disallow the Unicode Byte Order Mark (BOM) (unicode-bom)
     // NOT needed for UTF so off for now
     'unicode-bom': 0,
