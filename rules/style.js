@@ -145,6 +145,17 @@ module.exports = {
       'markers': ['=', '!']           // space here to support sprockets directives
     }],
     // require regex literals to be wrapped in parentheses
-    'wrap-regex': 0
+    'wrap-regex': 0,
+    // enforce a maximum file length
+    'max-lines': [1, 500, { 'skipBlankLines': true, 'skipComments': true}],
+    // Disallow mixes of different operators
+    'no-mixed-operators': 1,
+    // require or disallow line breaks inside braces
+    'object-curly-newline': [1, {
+      'multiline': true,
+      'minProperties': 2
+    }],
+    // Enforce spacing between rest and spread operators and their expressions
+    'rest-spread-spacing': [1]
   }
 };
