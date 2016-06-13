@@ -147,13 +147,13 @@ module.exports = {
     // require regex literals to be wrapped in parentheses
     'wrap-regex': 0,
     // enforce a maximum file length
-    'max-lines': [1, 500],
+    'max-lines': [1, { 'max': 500, 'skipComments': true, 'skipBlankLines': true }],
     // Disallow mixes of different operators
-    'no-mixed-operators': 1,
+    'no-mixed-operators': 0,
     // require or disallow line breaks inside braces
-    'object-curly-newline': [1, {
-      'multiline': true,
-      'minProperties': 2
+    // Causes issues, not for now
+    'object-curly-newline': [0, {
+      'multiline': true
     }],
     // Enforce spacing between rest and spread operators and their expressions
     'rest-spread-spacing': [1]
