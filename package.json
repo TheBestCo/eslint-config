@@ -1,10 +1,9 @@
 {
   "name": "eslint-config-phaistos-networks",
-  "version": "1.5.2",
+  "version": "1.5.4",
   "description": "Phastos Networks' shared eslint config",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/phaistos-networks/eslint-config-phaistos-networks.git"
@@ -14,5 +13,9 @@
   "bugs": {
     "url": "https://github.com/phaistos-networks/eslint-config-phaistos-networks/issues"
   },
-  "homepage": "https://github.com/phaistos-networks/eslint-config-phaistos-networks#readme"
+  "homepage": "https://github.com/phaistos-networks/eslint-config-phaistos-networks#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-bump": "^2.2.0"
+  }
 }
