@@ -203,7 +203,8 @@ module.exports = {
 
     // disallow using React.render/ReactDOM.render's return value
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-render-return-value.md
-    'react/no-render-return-value': WARN,
+    // TODO: on it later
+    'react/no-render-return-value': OFF,
 
     // require a shouldComponentUpdate method, or PureRenderMixin
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-optimization.md
