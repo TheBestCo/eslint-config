@@ -147,7 +147,7 @@ module.exports = {
     // require regex literals to be wrapped in parentheses
     'wrap-regex': 0,
     // enforce a maximum file length
-    'max-lines': [1, { 'max': 400, 'skipComments': true, 'skipBlankLines': true }],
+    'max-lines': [1, { 'max': 300, 'skipComments': true, 'skipBlankLines': true }],
     // Disallow mixes of different operators
     'no-mixed-operators': 0,
     // require or disallow line breaks inside braces
