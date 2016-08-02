@@ -1,3 +1,7 @@
+var OFF = 0;
+var WARN = 1;
+var ERROR = 2;
+
 module.exports = {
   'plugins': [
     'jsx-a11y',
@@ -86,7 +90,7 @@ module.exports = {
     }],
     // Prevent React to be incorrectly marked as unused
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-react.md
-    'react/jsx-uses-react': [1, { 'pragma': 'React' }],
+    'react/jsx-uses-react': [1],
     // Prevent variables used in JSX to be incorrectly marked as unused
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-vars.md
     'react/jsx-uses-vars': 1,
@@ -125,29 +129,29 @@ module.exports = {
     'react/prefer-es6-class': [1, 'always'],
     // Require stateless functions when not using lifecycle methods, setState or ref
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md
-    'react/prefer-stateless-function': 2,
+    'react/prefer-stateless-function': ERROR,
     // Prevent missing props validation in a React component definition
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
-    'react/prop-types': [1, { 'ignore': [], 'customValidators': [] }],
+    'react/prop-types': [WARN, { 'ignore': [], 'customValidators': [] }],
     // Prevent missing React when using JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
-    'react/react-in-jsx-scope': 2,
+    'react/react-in-jsx-scope': ERROR,
     // Restrict file extensions that may be required
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-extension.md
-    'react/require-extension': [1, { 'extensions': ['.jsx'] }],
+    'react/require-extension': [WARN, { 'extensions': ['.jsx'] }],
     // Require render() methods to return something
     // https://github.com/yannickcr/eslint-plugin-react/pull/502
     // NOTE: Does not work properly at all times
-    'react/require-render-return': 0,
+    'react/require-render-return': OFF,
     // Prevent extra closing tags for components without children
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md
-    'react/self-closing-comp': 1,
+    'react/self-closing-comp': WARN,
     // Enforce spaces before the closing bracket of self-closing JSX elements
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-space-before-closing.md
-    'react/jsx-space-before-closing': [1, 'always'],
+    'react/jsx-space-before-closing': [WARN, 'always'],
     // Enforce component methods order
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-comp.md
-    'react/sort-comp': [1, {
+    'react/sort-comp': [WARN, {
       'order': [
         'static-methods',
         'lifecycle',
@@ -160,10 +164,61 @@ module.exports = {
     }],
     // Prevent missing parentheses around multilines JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/wrap-multilines.md
-    'react/wrap-multilines': [1, {
+    'react/wrap-multilines': [WARN, {
       declaration: true,
       assignment: true,
       return: true
     }],
+    'react/wrap-multilines': 0, // deprecated version
+
+    // Require that the first prop in a JSX element be on a new line when the element is multiline
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-first-prop-new-line.md
+    'react/jsx-first-prop-new-line': [WARN, 'multiline'],
+
+    // Enforce spacing around jsx equals signs
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-equals-spacing.md
+    'react/jsx-equals-spacing': [WARN, 'never'],
+
+    // Enforce JSX indentation
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent.md
+    'react/jsx-indent': [WARN, 2],
+
+    // Disallow target="_blank" on links
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md
+    // This rules requires that you accompany all target='_blank' attributes with rel='noreferrer noopener'.
+    'react/jsx-no-target-blank': WARN,
+
+    // only .jsx files may have JSX
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
+    'react/jsx-filename-extension': [WARN, { extensions: ['.jsx'] }],
+
+    // prevent accidental JS comments from being injected into JSX as text
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md
+    'react/jsx-no-comment-textnodes': WARN,
+    'react/no-comment-textnodes': 0, // deprecated version
+
+    // disallow using React.render/ReactDOM.render's return value
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-render-return-value.md
+    'react/no-render-return-value': WARN,
+
+    // require a shouldComponentUpdate method, or PureRenderMixin
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-optimization.md
+    'react/require-optimization': [WARN, { allowDecorators: [] }],
+
+    // warn against using findDOMNode()
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-find-dom-node.md
+    'react/no-find-dom-node': OFF,
+  },
+
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.json']
+      }
+    },
+    react: {
+      pragma: 'React',
+      version: '0.15'
+    },
   }
 };
