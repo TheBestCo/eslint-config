@@ -144,6 +144,8 @@ module.exports = {
     // NOT needed for UTF so off for now
     'unicode-bom': 0,
     // Disallow use of Object.prototypes builtins directly
-    'no-prototype-builtins': 0
+    'no-prototype-builtins': 0,
+    // requires object keys to be sorted
+    'sort-keys': 1
   }
 };

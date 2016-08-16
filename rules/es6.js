@@ -100,6 +100,8 @@ module.exports = {
     'template-curly-spacing': [1, 'never'],
     // enforce spacing around the * in yield* expressions
     // http://eslint.org/docs/rules/yield-star-spacing
-    'yield-star-spacing': [1, 'after']
+    'yield-star-spacing': [1, 'after'],
+    // This rule aims to warn when a regular string contains what looks like a template literal placeholder. It will warn when it finds a string containing the template literal place holder (${something}) that uses either " or ' for the quotes.
+    'no-template-curly-in-string': 2
   }
 };
