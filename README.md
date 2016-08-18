@@ -5,6 +5,13 @@ This package provides Phaistos Networks's .eslintrc as an extensible shared conf
 
 *It's basically a clone of [Airbnb's](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) same project with different and more rules and some other minor changes*
 
+### How to update
+
+1. `Gulp`
+2. `git commit -am …`
+3. `git push`
+4. `npm publish`
+
 ## Usage
 
 We export three ESLint configurations for your usage.

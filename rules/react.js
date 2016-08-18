@@ -208,7 +208,7 @@ module.exports = {
 
     // require a shouldComponentUpdate method, or PureRenderMixin
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-optimization.md
-    'react/require-optimization': [WARN, { allowDecorators: [] }],
+    'react/require-optimization': [OFF, { allowDecorators: [] }],
 
     // warn against using findDOMNode()
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-find-dom-node.md
