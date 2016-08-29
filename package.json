@@ -13,9 +13,5 @@
   "bugs": {
     "url": "https://github.com/phaistos-networks/eslint-config-phaistos-networks/issues"
   },
-  "homepage": "https://github.com/phaistos-networks/eslint-config-phaistos-networks#readme",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-bump": "^2.2.0"
-  }
+  "homepage": "https://github.com/phaistos-networks/eslint-config-phaistos-networks#readme"
 }

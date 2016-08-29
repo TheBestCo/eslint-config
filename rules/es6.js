@@ -102,6 +102,12 @@ module.exports = {
     // http://eslint.org/docs/rules/yield-star-spacing
     'yield-star-spacing': [1, 'after'],
     // This rule aims to warn when a regular string contains what looks like a template literal placeholder. It will warn when it finds a string containing the template literal place holder (${something}) that uses either " or ' for the quotes.
-    'no-template-curly-in-string': 2
+    'no-template-curly-in-string': 2,
+
+    // This rules requires a description when creating symbols.
+    'symbol-description': 1,
+
+    // If a class method does not use this, it can safely be made a static function.
+    'class-methods-use-this': 1,
   }
 };
