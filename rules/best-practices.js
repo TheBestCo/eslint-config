@@ -146,6 +146,12 @@ module.exports = {
     // Disallow use of Object.prototypes builtins directly
     'no-prototype-builtins': 0,
     // requires object keys to be sorted
-    'sort-keys': 0
+    'sort-keys': 0,
+    // disallow parseInt() in favor of binary, octal, and hexadecimal literals (prefer-numeric-literals)
+    'prefer-numeric-literals': 0,
+    // enforce position of line comments (line-comment-position)
+    'line-comment-position': [1, { "position": "above" }],
+    // require or disallow newlines around directives (lines-around-directive)
+    'lines-around-directive': [1, 'always']
   }
 };
