@@ -150,7 +150,7 @@ module.exports = {
     // disallow parseInt() in favor of binary, octal, and hexadecimal literals (prefer-numeric-literals)
     'prefer-numeric-literals': 0,
     // enforce position of line comments (line-comment-position)
-    'line-comment-position': [1, { "position": "above" }],
+    'line-comment-position': [0, { "position": "above" }],
     // require or disallow newlines around directives (lines-around-directive)
     'lines-around-directive': [1, 'always']
   }
