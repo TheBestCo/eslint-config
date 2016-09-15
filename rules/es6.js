@@ -109,5 +109,6 @@ module.exports = {
 
     // If a class method does not use this, it can safely be made a static function.
     'class-methods-use-this': 0,
+
   }
 };
