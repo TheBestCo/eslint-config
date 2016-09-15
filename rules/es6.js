@@ -108,6 +108,6 @@ module.exports = {
     'symbol-description': 1,
 
     // If a class method does not use this, it can safely be made a static function.
-    'class-methods-use-this': 1,
+    'class-methods-use-this': 0,
   }
 };
