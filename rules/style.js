@@ -56,7 +56,7 @@ module.exports = {
     // specify the maximum depth callbacks can be nested
     'max-nested-callbacks': 0,
     // require a capital letter for constructors
-    'new-cap': [0, { 'newIsCap': true }],
+    'new-cap': 0,
     // disallow the omission of parentheses when invoking a constructor with no arguments
     'new-parens': 1,
     // allow/disallow an empty newline after var statement
