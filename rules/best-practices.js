@@ -152,6 +152,8 @@ module.exports = {
     // enforce position of line comments (line-comment-position)
     'line-comment-position': [0, { "position": "above" }],
     // require or disallow newlines around directives (lines-around-directive)
-    'lines-around-directive': [1, 'always']
+    'lines-around-directive': [1, 'always'],
+    // require function names to match the name of the variable or property to which they are assigned (func-name-matching)
+    'func-name-matching': 1
   }
 };
