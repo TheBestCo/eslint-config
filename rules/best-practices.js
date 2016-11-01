@@ -154,6 +154,8 @@ module.exports = {
     // require or disallow newlines around directives (lines-around-directive)
     'lines-around-directive': [1, 'always'],
     // require function names to match the name of the variable or property to which they are assigned (func-name-matching)
-    'func-name-matching': 1
+    'func-name-matching': 1,
+    // disallow redundant return statements (no-useless-return)
+    'no-useless-return' : 1
   }
 };
