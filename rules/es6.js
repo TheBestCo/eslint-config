@@ -113,8 +113,5 @@ module.exports = {
     // Disallow async functions which have no await expression
     'require-await': 1,
 
-    // Enforce or disallow capitalization of the first letter of a comment
-    'capitalize-comments': ["error", "never"]
-
   }
 };
