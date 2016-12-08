@@ -158,6 +158,6 @@ module.exports = {
     // Enforce spacing between rest and spread operators and their expressions
     'rest-spread-spacing': [1],
     // Enforce or disallow capitalization of the first letter of a comment
-    'capitalize-comments': 0
+    //'capitalize-comments': 0
   }
 };
