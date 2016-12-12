@@ -113,5 +113,8 @@ module.exports = {
     // Disallow async functions which have no await expression
     'require-await': 1,
 
+    // Disallow await inside of loops
+    'no-await-in-loop': 1,
+
   }
 };
