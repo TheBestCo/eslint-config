@@ -116,5 +116,13 @@ module.exports = {
     // Disallow await inside of loops
     'no-await-in-loop': 1,
 
+    // Prefer destructuring from arrays and objects
+    'prefer-destructuring': ['error', {
+      'array': true,
+      'object': true
+    }, {
+      'enforceForRenamedProperties': false
+    }]
+
   }
 };
