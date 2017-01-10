@@ -117,7 +117,7 @@ module.exports = {
     'no-await-in-loop': 1,
 
     // Prefer destructuring from arrays and objects
-    'prefer-destructuring': ['error', {
+    'prefer-destructuring': [ 1, {
       'array': true,
       'object': true
     }, {
