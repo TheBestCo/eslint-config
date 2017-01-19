@@ -11,6 +11,21 @@ module.exports = {
   // View link below for react rules documentation
   // https://github.com/yannickcr/eslint-plugin-react#list-of-supported-rules
   'rules': {
+    // Enforce emojis are wrapped in and provide screenreader access.
+    'jsx-a11y/accessible-emoji': 2,
+
+    // Enforce that anchors have content and that the content is accessible to screen readers.
+    'jsx-a11y/anchor-has-content': 2,
+
+    // Enforce all anchors are valid, navigable elements.
+    'jsx-a11y/anchor-is-valid': 2,
+
+    // Enforce elements with aria-activedescendant are tabbable.
+    'jsx-a11y/aria-activedescendant-has-tabindex': 2,
+
+    // Enforce ARIA state and property values are valid.
+    'jsx-a11y/aria-proptypes': 2,
+
     // Prevent use of `accessKey`
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-access-key.md
     'jsx-a11y/no-access-key': 2,
@@ -19,19 +34,35 @@ module.exports = {
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/img-uses-alt.md
     'jsx-a11y/alt-text': 2,
 
-    // Enforce an anchor element's href prop value is not just #.
-    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/href-no-hash.md
-    'jsx-a11y/href-no-hash': 2,
-
     // Enforce usage of onBlur over onChange on select menus for accessibility.
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-onchange.md
     'jsx-a11y/no-onchange': 0,
 
     'jsx-a11y/img-redundant-alt': 2,
 
-    // Require ARIA roles to be valid and non-abstract
-    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/valid-aria-role.md
+    //:Enforce all aria-* props are valid.
     'jsx-a11y/aria-props': 1,
+
+    // Enforce that elements with ARIA roles must use a valid, non-abstract ARIA role.
+    'jsx-a11y/aria-role': 1,
+
+    // Enforce that elements that do not support ARIA roles, states, and properties do not have those attributes.
+    'jsx-a11y/aria-unsupported-elements': 1,
+
+    // Enforce a clickable non-interactive element has at least one keyboard event listener.
+    'jsx-a11y/click-events-have-key-events': 1,
+
+    // Enforce heading (h1, h2, etc) elements contain accessible content.
+    'jsx-a11y/heading-has-content': 1,
+
+    // Enforce <html> element has lang prop.
+    'jsx-a11y/html-has-lang': 1,
+
+    // Enforce iframe elements have a title attribute.
+    'jsx-a11y/iframe-has-title': 1,
+
+    // Enforce lang attribute has a valid value.
+    'jsx-a11y/lang': 1,
 
     // Prevent missing displayName in a React component definition
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/display-name.md
