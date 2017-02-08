@@ -156,6 +156,9 @@ module.exports = {
     // require function names to match the name of the variable or property to which they are assigned (func-name-matching)
     'func-name-matching': 1,
     // disallow redundant return statements (no-useless-return)
-    'no-useless-return' : 1
+    'no-useless-return': 1,
+
+    // Disallow Use of Chained Assignment Expressions (no-multi-assign)
+    "no-multi-assign": 2,
   }
 };

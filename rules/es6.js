@@ -122,7 +122,11 @@ module.exports = {
       'object': true
     }, {
       'enforceForRenamedProperties': false
-    }]
+    }],
 
+    // Require or disallow spacing between template tags and their literals (template-tag-spacing)
+    "template-tag-spacing": ["error", "never"],
+
+    "prefer-promise-reject-errors": ["error", {"allowEmptyReject": true}]
   }
 };
