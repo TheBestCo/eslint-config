@@ -160,5 +160,8 @@ module.exports = {
 
     // Disallow Use of Chained Assignment Expressions (no-multi-assign)
     "no-multi-assign": 2,
+    // enforce the location of single-line statements 
+    // This rule aims to enforce a consistent location for single-line statements.
+    'nonblock-statement-body-position' : [2, 'below']
   }
 };
