@@ -52,6 +52,7 @@ module.exports = {
       'tabWidth': 2,
       'ignoreTrailingComments': true,
       'ignoreComments': false,
+      'ignoreStrings': true,
       'ignoreTemplateLiterals': true,
       'ignoreRegExpLiterals': true
     }],
