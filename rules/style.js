@@ -51,7 +51,9 @@ module.exports = {
       'ignoreUrls': true,
       'tabWidth': 2,
       'ignoreTrailingComments': true,
-      'ignoreComments': false
+      'ignoreComments': false,
+      'ignoreTemplateLiterals': true,
+      'ignoreRegExpLiterals': true
     }],
     // specify the maximum depth callbacks can be nested
     'max-nested-callbacks': 0,
