@@ -74,7 +74,8 @@ module.exports = {
     'no-array-constructor': 1,
 
     // disallow use of the Buffer() constructor
-    'no-buffer-constructor': 1,
+    // not yet ready
+    // 'no-buffer-constructor': 1,
 
     // disallow use of the continue statement
     'no-continue': 0,
