@@ -29,7 +29,8 @@ module.exports = {
 
     // Enforce usage of onBlur over onChange on select menus for accessibility.
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-onchange.md
-    'jsx-a11y/img-redundant-alt': 2,
+    // // NOT ANYMORE
+    'jsx-a11y/img-redundant-alt': 0,
 
     // Require ARIA roles to be valid and non-abstract
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/valid-aria-role.md
