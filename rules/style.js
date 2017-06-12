@@ -62,10 +62,15 @@ module.exports = {
     'new-cap': 0,
     // disallow the omission of parentheses when invoking a constructor with no arguments
     'new-parens': 1,
+
+    // Deprecated as of 4.0
     // allow/disallow an empty newline after var statement
-    'newline-after-var': 0,
+    // 'newline-after-var': 0,
+
+    // Deprecated as of 4.0
     // http://eslint.org/docs/rules/newline-before-return
-    'newline-before-return': 0,
+    // 'newline-before-return': 0,
+
     // enforces new line after each method call in the chain to make it
     // more readable and easy to maintain
     // http://eslint.org/docs/rules/newline-per-chained-call
@@ -134,6 +139,8 @@ module.exports = {
     'semi-spacing': [1, { 'before': false, 'after': true }],
     // require or disallow use of semicolons instead of ASI
     'semi': [1, 'always'],
+
+
     // sort variables within the same declaration block
     'sort-vars': 0,
     // require or disallow space before blocks
@@ -167,5 +174,24 @@ module.exports = {
     'rest-spread-spacing': [1],
     // Enforce or disallow capitalization of the first letter of a comment
     'capitalized-comments': 0,
+
+    // enforce line breaks between array elements (array-element-newline)
+    'array-element-newline': 0,
+
+    // Enforce location of semicolons (semi-style)
+    'semi-style': 0,
+
+    // Require or disallow padding lines between statements (padding-line-between-statements)
+    'padding-line-between-statements': ['error', { blankLine: "always", prev: "*", next: "return" }],
+
+    // for-direction
+    'for-direction': 'warn',
+
+    // Enforce spacing around colons of switch statements (switch-colon-spacing)
+    "switch-colon-spacing": ["error", {"after": true, "before": false}],
+
+    // enforce line breaks after opening and before closing array brackets (array-bracket-newline)
+    "array-bracket-newline": ["warn", { "multiline" : true }],
+
   }
 };

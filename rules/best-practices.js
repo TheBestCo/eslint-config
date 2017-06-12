@@ -151,8 +151,11 @@ module.exports = {
     'prefer-numeric-literals': 0,
     // enforce position of line comments (line-comment-position)
     'line-comment-position': [0, { "position": "above" }],
+
+    // DEPRECATED as of 4.0
     // require or disallow newlines around directives (lines-around-directive)
-    'lines-around-directive': [1, 'always'],
+    // 'lines-around-directive': [1, 'always'],
+
     // require function names to match the name of the variable or property to which they are assigned (func-name-matching)
     'func-name-matching': 1,
     // disallow redundant return statements (no-useless-return)
@@ -160,8 +163,14 @@ module.exports = {
 
     // Disallow Use of Chained Assignment Expressions (no-multi-assign)
     "no-multi-assign": 2,
-    // enforce the location of single-line statements 
+    // enforce the location of single-line statements
     // This rule aims to enforce a consistent location for single-line statements.
-    'nonblock-statement-body-position' : [2, 'below']
+    'nonblock-statement-body-position' : [2, 'below'],
+
+    // disallow use of the Buffer() constructor (no-buffer-constructor)
+    'no-buffer-constructor': 2,
+
+    // disallow the use of debugger (no-debugger)
+    'no-debugger': 1,
   }
 };
