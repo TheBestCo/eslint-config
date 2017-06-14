@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-phaistos-networks",
-  "version": "1.8.1",
+  "version": "1.8.2",
   "description": "Phastos Networks' shared eslint config",
   "main": "index.js",
   "scripts": {},
