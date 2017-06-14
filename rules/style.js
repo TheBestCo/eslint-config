@@ -182,7 +182,7 @@ module.exports = {
     'semi-style': 0,
 
     // Require or disallow padding lines between statements (padding-line-between-statements)
-    'padding-line-between-statements': ['error', { blankLine: "always", prev: "*", next: "return" }],
+    'padding-line-between-statements': ['error', { blankLine: "any", prev: "*", next: "return" }],
 
     // for-direction
     'for-direction': 'warn',
