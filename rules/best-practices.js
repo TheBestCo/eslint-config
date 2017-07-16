@@ -172,5 +172,8 @@ module.exports = {
 
     // disallow the use of debugger (no-debugger)
     'no-debugger': 1,
+
+    // Enforces that a return statement is present in property getters (getter-return)
+    'getter-return': 'error'
   }
 };

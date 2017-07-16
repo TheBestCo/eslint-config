@@ -18,6 +18,6 @@ module.exports = {
     // restrict usage of specified node modules
     'no-restricted-modules': 0,
     // disallow use of synchronous methods (off by default)
-    'no-sync': 1
+    'no-sync': ["error", { allowAtRootLevel: true }]
   }
 };
