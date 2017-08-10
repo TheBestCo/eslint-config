@@ -50,7 +50,7 @@ module.exports = {
     'jsx-a11y/aria-unsupported-elements': 1,
 
     // Enforce a clickable non-interactive element has at least one keyboard event listener.
-    'jsx-a11y/click-events-have-key-events': 1,
+    'jsx-a11y/click-events-have-key-events': 0,
 
     // Enforce heading (h1, h2, etc) elements contain accessible content.
     'jsx-a11y/heading-has-content': 1,
