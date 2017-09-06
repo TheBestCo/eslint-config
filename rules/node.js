@@ -4,7 +4,7 @@ module.exports = {
   },
   'rules': {
     // enforce return after a callback
-    'callback-return': [1, ["callback", "cb", "next"]],
+    'callback-return': [1, ["callback", "cb"]],
     // enforces error handling in callbacks (node environment)
     'handle-callback-err': 1,
     // disallow mixing regular variable and require declarations
