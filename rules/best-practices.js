@@ -8,7 +8,7 @@ module.exports = {
     // treat var statements as if they were block scoped
     'block-scoped-var': 1,
     // specify the maximum cyclomatic complexity allowed in a program
-    'complexity': [0, 11],
+    'complexity': [0, 5],
     // require return statements to either always or never specify values
     'consistent-return': 1,
     // specify curly brace conventions for all control statements
@@ -174,6 +174,20 @@ module.exports = {
     'no-debugger': 1,
 
     // Enforces that a return statement is present in property getters (getter-return)
-    'getter-return': 'error'
+    'getter-return': 'error',
+
+    // Prefer use of an object spread over Object.assign (prefer-object-spread)
+    'prefer-object-spread': 0,
+
+    // enforce a maximum number of classes per file (max-classes-per-file)
+    'max-classes-per-file': ['error', 1],
+
+    'max-lines-per-function': [
+      'error', {
+        max: 120,
+        skipBlankLines: true,
+        skipComments: true,
+      },
+    ]
   }
 };
