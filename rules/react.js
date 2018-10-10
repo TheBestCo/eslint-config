@@ -140,7 +140,9 @@ module.exports = {
     'react/no-deprecated': [1],
     // Prevent usage of setState in componentDidMount
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-did-mount-set-state.md
-    'react/no-did-mount-set-state': [ERROR],
+    // No longer the case: https://reactjs.org/docs/react-component.html#componentdidmount
+    // https://github.com/airbnb/javascript/issues/684
+    'react/no-did-mount-set-state': [OFFF],
     // Prevent usage of setState in componentDidUpdate
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-did-update-set-state.md
     'react/no-did-update-set-state': [ERROR],
