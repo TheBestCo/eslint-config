@@ -5,7 +5,8 @@ var ERROR = 2;
 module.exports = {
   'plugins': [
     'jsx-a11y',
-    'react'
+    'react',
+    'react-hooks',
   ],
 
   // View link below for react rules documentation
@@ -253,7 +254,10 @@ module.exports = {
 
     // warn against using findDOMNode()
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-find-dom-node.md
-    'react/no-find-dom-node': OFF
+    'react/no-find-dom-node': OFF,
+
+    // https://www.npmjs.com/package/eslint-plugin-react-hooks
+    'react-hooks/rules-of-hooks': ERROR,
   },
 
   settings: {
