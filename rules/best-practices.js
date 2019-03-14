@@ -118,7 +118,7 @@ module.exports = {
     // http://eslint.org/docs/rules/no-useless-escape
     'no-useless-escape': 1,
     // disallow use of void operator
-    'no-void': 1,
+    'no-void': 0,
     // disallow usage of configurable warning terms in comments: e.g. todo
     'no-warning-comments': [0, { 'terms': ['todo', 'fixme', 'xxx'], 'location': 'start' }],
     // disallow use of the with statement
