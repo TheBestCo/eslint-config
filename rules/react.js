@@ -258,6 +258,7 @@ module.exports = {
 
     // https://www.npmjs.com/package/eslint-plugin-react-hooks
     'react-hooks/rules-of-hooks': ERROR,
+    'react-hooks/exhaustive-deps': WARN,
   },
 
   settings: {
