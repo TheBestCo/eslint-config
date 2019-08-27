@@ -79,7 +79,7 @@ module.exports = {
 
     // Validate closing tag location in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-tag-location.md
-    'react/jsx-closing-tag-location': 'error',
+    'react/jsx-closing-tag-location': 0,
 
     // Enforce boolean attributes notation in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md
