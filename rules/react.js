@@ -68,12 +68,24 @@ module.exports = {
     // Prevent missing displayName in a React component definition
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/display-name.md
     'react/display-name': [0, { 'ignoreTranspilerName': false }],
+
     // Forbid certain propTypes (any, array, object)
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-prop-types.md
     'react/forbid-prop-types': [1, { 'forbid': ['any'] }],
+
+    // Forbid certain props on DOM Nodes
+    // https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/forbid-dom-props.md
+    'react/forbid-dom-props': ['off', { forbid: [] }],
+
+    // Validate closing tag location in JSX
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-tag-location.md
+    'react/jsx-closing-tag-location': 'error',
+
     // Enforce boolean attributes notation in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md
     'react/jsx-boolean-value': [1, 'never'],
+
+
     // Validate closing bracket location in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md
     'react/jsx-closing-bracket-location': [1, { nonEmpty: 'after-props', selfClosing: 'after-props'} ],
@@ -240,7 +252,7 @@ module.exports = {
 
     // prevent accidental JS comments from being injected into JSX as text
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md
-    'react/jsx-no-comment-textnodes': WARN,
+    'react/jsx-no-comment-textnodes': ERROR,
     'react/no-comment-textnodes': 0, // deprecated version
 
     // disallow using React.render/ReactDOM.render's return value
@@ -259,6 +271,52 @@ module.exports = {
     // https://www.npmjs.com/package/eslint-plugin-react-hooks
     'react-hooks/rules-of-hooks': ERROR,
     'react-hooks/exhaustive-deps': WARN,
+
+    'react/no-typos': 'error',
+
+    // Prevent unused state values
+     // https://github.com/yannickcr/eslint-plugin-react/pull/1103/
+    'react/no-unused-state': 'error',
+
+
+    // Prevent usage of shouldComponentUpdate when extending React.PureComponent
+    // https://github.com/yannickcr/eslint-plugin-react/blob/9e13ae2c51e44872b45cc15bf1ac3a72105bdd0e/docs/rules/no-redundant-should-component-update.md
+    'react/no-redundant-should-component-update': 'error',
+
+    // Prevent void DOM elements from receiving children
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/void-dom-elements-no-children.md
+    'react/void-dom-elements-no-children': 'error',
+
+    // Forbids using non-exported propTypes
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-foreign-prop-types.md
+    // this is intentionally set to "warn". it would be "error",
+    // but it's only critical if you're stripping propTypes in production.
+    'react/forbid-foreign-prop-types': ['warn', { allowInPropTypes: true }],
+
+    // Prevent usage of Array index in keys
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-array-index-key.md
+    'react/no-array-index-key': 'error',
+
+    // Prevent passing of children as props
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-children-prop.md
+    'react/no-children-prop': 'error',
+
+    // Require style prop value be an object or var
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/style-prop-object.md
+    'react/style-prop-object': 'error',
+
+    // Prevent unused propType definitions
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-prop-types.md
+    'react/no-unused-prop-types': ['error', {
+      customValidators: [
+      ],
+      skipShapeProps: true,
+    }],
+
+
+    // Prevent problem with children and props.dangerouslySetInnerHTML
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-danger-with-children.md
+    'react/no-danger-with-children': 'error',
   },
 
   settings: {
