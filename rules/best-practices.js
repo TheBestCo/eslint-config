@@ -188,6 +188,21 @@ module.exports = {
         skipBlankLines: true,
         skipComments: true,
       },
-    ]
+    ],
+
+    // https://eslint.org/docs/rules/grouped-accessor-pairs
+    'grouped-accessor-pairs': 2,
+
+    // https://eslint.org/docs/rules/no-constructor-return
+    'no-constructor-return': 1,
+
+    // https://eslint.org/docs/rules/no-dupe-else-if
+    'no-dupe-else-if': 'error',
+
+    // https://eslint.org/docs/rules/no-setter-return
+    'no-setter-return': 'error',
+
+    // https://eslint.org/docs/rules/prefer-exponentiation-operator
+    'prefer-exponentiation-operator': 'warn',
   }
 };
