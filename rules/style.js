@@ -34,6 +34,7 @@ module.exports = {
       {
         'SwitchCase': 1,
         'VariableDeclarator': 1,
+        'ignoredNodes': ['TemplateLiteral']
       },
     ],
     // specify whether double or single quotes should be used in JSX attributes
