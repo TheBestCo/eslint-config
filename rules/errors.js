@@ -49,7 +49,10 @@ module.exports = {
     // disallow comparisons with the value NaN
     'use-isnan': 1,
     // ensure JSDoc comments are valid
-    'valid-jsdoc': 1,
+    'valid-jsdoc': [1, {
+      requireReturn: false,
+      requireReturnDescription: false,
+    }],
     // ensure that the results of typeof are compared against a valid string
     'valid-typeof': 2,
     // Avoid code that looks like two expressions but is actually one
