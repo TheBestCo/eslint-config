@@ -204,5 +204,14 @@ module.exports = {
 
     // https://eslint.org/docs/rules/prefer-exponentiation-operator
     'prefer-exponentiation-operator': 'warn',
+
+    // Disallow specified names in exports (no-restricted-exports)
+    // https://eslint.org/docs/rules/no-restricted-exports
+    'no-restricted-exports': [1, { restrictedNamedExports: ['foo', 'bar'] }],
+
+
+    // Enforce default clauses in switch statements to be last (default-case-last)
+    // https://eslint.org/docs/rules/default-case-last
+    'default-case-last': 'error'
   }
 };
