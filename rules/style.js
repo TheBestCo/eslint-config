@@ -23,7 +23,7 @@ module.exports = {
     // enforce newline at the end of file, with no multiple empty lines
     "eol-last": 1,
     // require function expressions to have a name
-    "func-names": ['error', 'as-needed', { generators: 'as-needed' }],
+    "func-names": ['error', 'as-needed', { generators: 'never' }],
     // enforces use of function declarations or expressions
     "func-style": 0,
     // this option enforces minimum and maximum identifier lengths
