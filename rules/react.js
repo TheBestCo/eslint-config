@@ -185,7 +185,7 @@ module.exports = {
     'react/prefer-stateless-function': ERROR,
     // Prevent missing props validation in a React component definition
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
-    'react/prop-types': [WARN, { 'ignore': [], 'customValidators': [] }],
+    "react/prop-types": 0,
     // Prevent missing React when using JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
     'react/react-in-jsx-scope': ERROR,
@@ -270,7 +270,7 @@ module.exports = {
 
     // https://www.npmjs.com/package/eslint-plugin-react-hooks
     'react-hooks/rules-of-hooks': ERROR,
-    'react-hooks/exhaustive-deps': WARN,
+    'react-hooks/exhaustive-deps': OFF,
 
     'react/no-typos': 'error',
 
