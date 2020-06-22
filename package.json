@@ -1,17 +1,17 @@
 {
-  "name": "eslint-config-phaistos-networks",
+  "name": "@thebestco/eslint-config",
   "version": "1.9.23",
-  "description": "Phastos Networks' shared eslint config",
+  "description": "The BestCompany's shared eslint config",
   "main": "index.js",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/phaistos-networks/eslint-config-phaistos-networks.git"
+    "url": "git+https://github.com/TheBestCo/eslint-config.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/phaistos-networks/eslint-config-phaistos-networks/issues"
+    "url": "https://github.com/TheBestCo/eslint-config/issues"
   },
-  "homepage": "https://github.com/phaistos-networks/eslint-config-phaistos-networks#readme"
+  "homepage": "https://github.com/TheBestCo/eslint-configs#readme"
 }
