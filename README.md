@@ -1,4 +1,4 @@
-# Bestprices eslint-config
+# BestPrice's eslint-config
 
 This package provides bestprices's .eslintrc as an extensible shared config.
 
