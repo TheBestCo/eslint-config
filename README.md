@@ -1,6 +1,6 @@
 # BestPrice's eslint-config
 
-This package provides bestprices's .eslintrc as an extensible shared config.
+This package provides BestPrice's .eslintrc as an extensible shared config.
 
 _It's basically a clone of [Airbnb's](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) same project with different and more rules and some other minor changes_
 
