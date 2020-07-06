@@ -4,7 +4,7 @@ module.exports = {
     "newline-per-chained-call": 0,
 
     // enforce operators to be placed before or after line breaks
-    "operator-linebreak": ["error", "after"],
+    "operator-linebreak": 0,
 
     // require or disallow space before function opening parenthesis
     // https://github.com/eslint/eslint/blob/master/docs/rules/space-before-function-paren.md
@@ -28,6 +28,6 @@ module.exports = {
     "react/jsx-closing-bracket-location": [
       1,
       { selfClosing: "line-aligned", nonEmpty: "after-props" },
-    ]
-  }
+    ],
+  },
 };
