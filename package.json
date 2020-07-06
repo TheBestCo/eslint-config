@@ -1,6 +1,6 @@
 {
   "name": "@thebestco/eslint-config",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "The BestCompany's shared eslint config",
   "main": "index.js",
   "scripts": {},
