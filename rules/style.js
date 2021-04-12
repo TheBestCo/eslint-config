@@ -37,6 +37,7 @@ module.exports = {
       {
         SwitchCase: 1,
         VariableDeclarator: 1,
+        offsetTernaryExpressions: true, // Match prettier
         ignoredNodes: ["TemplateLiteral"],
       },
     ],
