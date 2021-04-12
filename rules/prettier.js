@@ -21,7 +21,10 @@ module.exports = {
       "error",
       2,
       {
-        "offsetTernaryExpressions": true
+        SwitchCase: 1,
+        VariableDeclarator: 1,
+        offsetTernaryExpressions: true, // Match prettier
+        ignoredNodes: ["TemplateLiteral"],
       }
     ],
 
