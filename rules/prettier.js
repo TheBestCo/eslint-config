@@ -17,6 +17,14 @@ module.exports = {
       },
     ],
 
+    "indent": [
+      "error",
+      2,
+      {
+        "offsetTernaryExpressions": true
+      }
+    ],
+
     // require immediate function invocation to be wrapped in parentheses
     // http://eslint.org/docs/rules/wrap-iife.html
     "wrap-iife": ["error", "inside"],
