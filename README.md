@@ -46,7 +46,7 @@ all the es-rules that are effecting the code formating and interfere with the pr
 The prettier setup contains the default export extended with the formating rules that interfere with the prettier.
 It requires `eslint` and `eslint-plugin-react`, as it is in the default configuration.
 
-1. `npm install --save-dev @thebestco/eslint-config eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y eslint-plugin-react-hooks@next babel-eslint eslint`
+1. `npm install --save-dev @thebestco/eslint-config eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y eslint-plugin-react-hooks@next eslint-plugin-react-refresh babel-eslint eslint`
 2. add `"extends": "@thebestco/eslint-config/prettier"` to your .eslintrc
 
 ### If you want to have eslint installed globally, i.e running eslint in terminal (CLI)
@@ -58,6 +58,7 @@ npm install -g eslint-plugin-react
 npm install -g eslint-plugin-import
 npm install -g eslint-plugin-jsx-a11y
 npm install -g eslint-plugin-react-hooks@next
+npm install -g eslint-plugin-react-refresh
 npm install -g @thebestco/eslint-config
 ```
 
