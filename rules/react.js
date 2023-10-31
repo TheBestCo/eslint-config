@@ -337,7 +337,7 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-danger-with-children.md
     "react/no-danger-with-children": "error",
 
-    "react-refresh/only-export-components": ["warn", { checkJS: true }],
+    "react-refresh/only-export-components": ["warn", { checkJS: false }],
   },
 
   settings: {
