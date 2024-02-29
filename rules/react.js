@@ -186,7 +186,23 @@ module.exports = {
     "react/no-string-refs": OFF,
     // Prevent usage of unknown DOM property
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unknown-property.md
-    "react/no-unknown-property": ERROR,
+    "react/no-unknown-property": [
+      ERROR,
+      {
+        ignore: [
+          "onPointerDown",
+          "onPointerMove",
+          "onPointerUp",
+          "onPointerCancel",
+          "onGotPointerCapture",
+          "onLostPointerCapture",
+          "onPointerEnter",
+          "onPointerLeave",
+          "onPointerOver",
+          "onPointerOut",
+        ],
+      },
+    ],
     // Require ES6 class declarations over React.createClass
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md
     "react/prefer-es6-class": [ERROR, "always"],
