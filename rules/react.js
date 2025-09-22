@@ -3,7 +3,13 @@ var WARN = 1;
 var ERROR = 2;
 
 module.exports = {
-  plugins: ["jsx-a11y", "react", "react-hooks", "react-refresh"],
+  plugins: [
+    "jsx-a11y",
+    "react",
+    "react-hooks",
+    "react-refresh",
+    "eslint-plugin-react-you-might-not-need-an-effect",
+  ],
 
   // View link below for react rules documentation
   // https://github.com/yannickcr/eslint-plugin-react#list-of-supported-rules

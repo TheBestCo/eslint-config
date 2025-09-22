@@ -20,14 +20,14 @@ We export four ESLint configurations for your usage.
 Our default export contains all of our ESLint rules, including EcmaScript 6+
 and React. It requires `eslint` and `eslint-plugin-react`.
 
-1. `npm install --save-dev @thebestco/eslint-config eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y eslint-plugin-react-hooks@next babel-eslint eslint`
+1. `npm install --save-dev @thebestco/eslint-config eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y eslint-plugin-react-you-might-not-need-an-effect eslint-plugin-react-hooks@next babel-eslint eslint`
 2. add `"extends": "@thebestco"` to your .eslintrc
 
 ### @thebestco/eslint-config/base
 
 Lints ES6+ but does not lint React. Requires `eslint`.
 
-1. `npm install --save-dev @thebestco/eslint-config eslint-plugin-import babel-eslint eslint-plugin-react-hooks@next eslint`
+1. `npm install --save-dev @thebestco/eslint-config eslint-plugin-import babel-eslint eslint-plugin-react-you-might-not-need-an-effect eslint-plugin-react-hooks@next eslint`
 2. add `"extends": "@thebestco/eslint-config/base"` to your .eslintrc
 
 ### @thebestco/eslint-config/legacy
@@ -60,6 +60,7 @@ npm install -g eslint-plugin-jsx-a11y
 npm install -g eslint-plugin-react-hooks@next
 npm install -g eslint-plugin-react-refresh
 npm install -g @thebestco/eslint-config
+npm install -g eslint-plugin-react-you-might-not-need-an-effect
 ```
 
 ### Additional notes
